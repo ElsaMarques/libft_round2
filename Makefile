@@ -33,10 +33,10 @@ BONUS_O = ${BFUNCTIONS:.c=.o}
 all: $(NAME)
  
 $(OBJS): $(FUNCTIONS)
-		cc $(FLAGS) -c $(FUNCTIONS) -I $(HEADER)
+		cc $(FLAGS) -c $(FUNCTIONS)
 
 $(BONUS_O): $(BFUNCTIONS)
-		cc $(FLAGS) -c $(BFUNCTIONS) -I $(HEADER)
+		cc $(FLAGS) -c $(BFUNCTIONS)
 		
 $(NAME): $(OBJS)
 		ar rc $(NAME) $(OBJS)
